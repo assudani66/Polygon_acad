@@ -1,0 +1,20 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="680" scrolly="335" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="604" scrolly="342.99998474121094" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="replaceTexture" id="]D,b_OgA6H35-U63{-T9" x="-650" y="-270">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false" usecanvasvideoalpha="false"></mutation>
+      <field name="OLD_TEX_NAME">path.mp4.001</field>
+      <value name="MATERIAL">
+        <shadow type="materialList" id="2=G*@ySed/x.%jGRa@~w">
+          <field name="FIELDNAME">path</field>
+        </shadow>
+      </value>
+      <value name="NEW_TEX_URL">
+        <shadow type="text" id="j]8[-ouDJJ8Bd9Uw3]oj">
+          <field name="TEXT">path.mp4</field>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+  <editorsettings viewport-x="903.5999999999999" viewport-y="28" viewport-w="614.4" viewport-h="373" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

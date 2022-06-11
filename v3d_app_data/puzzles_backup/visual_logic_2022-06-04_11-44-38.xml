@@ -1,0 +1,117 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="680" scrolly="335" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="761.1999661624432" scrolly="326.80002304911613" scale="1">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="TX7N@OJJ?k%Y~bC8Wr!l" type="">video</variable>
+      <variable id="$Gh9dxUwbQ)wa|V!uR^X" type="">video_1</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="4._9KD)Uu+T}|p-EDq0u" x="-690" y="-330">
+      <field name="VAR" id="TX7N@OJJ?k%Y~bC8Wr!l">video</field>
+      <value name="VALUE">
+        <block type="loadVideo" id="LFVwrn2SU0m6LbLo27!f">
+          <value name="URL">
+            <shadow type="text" id="qQw3y;N@`uXMHICW29?~">
+              <field name="TEXT">path.mp4</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+      <next>
+        <block type="replaceTexture" id="]D,b_OgA6H35-U63{-T9">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false" usecanvasvideoalpha="false"></mutation>
+          <field name="OLD_TEX_NAME">path.mp4.001</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="2=G*@ySed/x.%jGRa@~w">
+              <field name="FIELDNAME">path</field>
+            </shadow>
+          </value>
+          <value name="NEW_TEX_URL">
+            <shadow type="text" id="j]8[-ouDJJ8Bd9Uw3]oj">
+              <field name="TEXT">path.mp4</field>
+            </shadow>
+            <block type="variables_get" id="U5H8YH_xP4(DI5IIw[)v">
+              <field name="VAR" id="TX7N@OJJ?k%Y~bC8Wr!l">video</field>
+            </block>
+          </value>
+          <next>
+            <block type="playSound" id=",LRj:M_Q:xkonl?J?]B8">
+              <field name="LOOP">TRUE</field>
+              <value name="VALUE">
+                <block type="variables_get" id=";IrGkfu?f;lyn6OG(^=V">
+                  <field name="VAR" id="TX7N@OJJ?k%Y~bC8Wr!l">video</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="ANdJ2dFU4;%v!V2d~@R1" x="-690" y="-150">
+      <field name="VAR" id="$Gh9dxUwbQ)wa|V!uR^X">video_1</field>
+      <value name="VALUE">
+        <block type="loadVideo" id="IFdaFAB3yU*iA9]zw1-P">
+          <value name="URL">
+            <shadow type="text" id="K5E0M{xA9ptxU$dQ%7/A">
+              <field name="TEXT">Color Matte_3.mp4</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+      <next>
+        <block type="replaceTexture" id="0VqZ0GpMN;-;h0)eg}8L">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false" usecanvasvideoalpha="false"></mutation>
+          <field name="OLD_TEX_NAME">Color Matte_3.mp4</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="lxkZ=m}dbNVdVJ8Xu}F;">
+              <field name="FIELDNAME">Color Matte_3</field>
+            </shadow>
+          </value>
+          <value name="NEW_TEX_URL">
+            <shadow type="text">
+              <field name="TEXT">path.mp4</field>
+            </shadow>
+            <block type="variables_get" id="]sC}*(cAX1MIK/3pfj+m">
+              <field name="VAR" id="$Gh9dxUwbQ)wa|V!uR^X">video_1</field>
+            </block>
+          </value>
+          <next>
+            <block type="playSound" id="UF/m(JHKcq.SMGia^NM6">
+              <field name="LOOP">TRUE</field>
+              <value name="VALUE">
+                <block type="variables_get" id="Y:wLk:f/CPOaHektEsn@">
+                  <field name="VAR" id="$Gh9dxUwbQ)wa|V!uR^X">video_1</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id="u`L_a0KNYr~pRUJLQuxk" x="-690" y="50">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <block type="objectList" id="wYB{v0:,AWPGMG3~1~[6">
+          <field name="FIELDNAME">repulsion</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="setMaterialValue" id="?l-3YgyEh{/(Lp.9|620">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" flexvalinput="false"></mutation>
+          <field name="MAT_VAL_NAME">Value</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="2qDkRX:zIosT-Yg|CsQ#">
+              <field name="FIELDNAME">Color Matte_3</field>
+            </shadow>
+          </value>
+          <value name="VALUE">
+            <shadow type="math_number" id="gkC?EoSypotAp5N7Bm-D">
+              <field name="NUM">0.5</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="903.5999999999999" viewport-y="28" viewport-w="614.4" viewport-h="373" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
